@@ -36,3 +36,34 @@ Recurso POST
 
     :status 201: Empresa creado
     :status 400: Cuerpo con estructura inválida
+
+Recurso GET
+
+    .. http:get:: /api/user
+
+    * **Ejemplo de petición**
+
+        .. sourcecode:: http
+
+            POST /api/user HTTP/1.1
+            Content-Type: application/json
+    
+    * **Ejemplos de respuesta**
+
+        {
+            "data": [
+                {
+                    "id": 1,
+                    "name": "Pepito",
+                    "doc": "123456789",
+                    "profile": "admin"
+                },
+                {
+                    "id": 2,
+                    "name": "Lolito",
+                    "doc": "2211122211",
+                    "profile": "admin"
+                }
+            ]
+        }
+    :status 200: Ok
