@@ -19,7 +19,7 @@ class UserApi(APIView):
                 "data": validator.errors
             }, status=status.HTTP_400_BAD_REQUEST)
         
-        user = User.objects.create(request.data).pk
+        user = User.objects.create(**request.data).pk
         return Response(
             {
                 "pk":user
