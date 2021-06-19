@@ -50,20 +50,23 @@ Recurso GET
     
     * **Ejemplos de respuesta**
 
-        {
-            "data": [
-                {
-                    "id": 1,
-                    "name": "Pepito",
-                    "doc": "123456789",
-                    "profile": "admin"
-                },
-                {
-                    "id": 2,
-                    "name": "Lolito",
-                    "doc": "2211122211",
-                    "profile": "admin"
-                }
-            ]
-        }
+        .. sourcecode:: http
+
+            {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Pepito",
+                        "doc": "123456789",
+                        "profile": "admin"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Lolito",
+                        "doc": "2211122211",
+                        "profile": "admin"
+                    }
+                ]
+            }
+            
     :status 200: Ok
