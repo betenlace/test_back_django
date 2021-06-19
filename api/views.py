@@ -10,6 +10,7 @@ class UserApi(APIView):
         validator = Validator({
             "name":{"required":True,"type":"string"},
             "doc":{"required":True,"type":"string"},
+            "profile":{"required":True,"type":"string"},
         })
         if not validator.validate(request.data):
             return Response({
