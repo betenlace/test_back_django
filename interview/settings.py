@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
+import dj_database_url
 from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 load_dotenv(find_dotenv(filename="../../.env"))
